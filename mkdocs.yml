@@ -1,0 +1,20 @@
+site_name: Izumi Takuma
+theme:
+  name: 'material'
+  palette: 
+    primary: 'Teal'
+    accent: 'Pink'
+
+extra_css: 
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/custom.css"
+
+markdown_extensions:
+    - admonition
+    - codehilite
+    - toc:
+          permalink: true
+
+nav:
+
