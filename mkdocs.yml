@@ -20,3 +20,8 @@ nav:
   - Top : 'index.md' 
   - Tech Blog : 
     - Mkdocsを使ったGithub Pagesの作成方法 : 'deploy-gh-pages-with-mkdocs.md'
+
+extra:
+  analytics:
+    provider: google
+    property: G-1ZSQXLJQJV
