@@ -1,27 +1,52 @@
-site_name: Izumi Takuma 
+site_name: コトづテック
 theme:
-  name: 'material'
-  palette: 
-    primary: 'Teal'
-    accent: 'Pink'
+  name: "material"
 
-extra_css: 
-  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
-  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
-  - "css/custom.css"
+  palette:
+    primary: "Deep Orange"
+    accent: "Indigo"
 
-markdown_extensions:
-    - admonition
-    - codehilite
-    - toc:
-          permalink: true
-
-nav:
-  - Top : 'index.md' 
-  - Tech Blog : 
-    - Mkdocsを使ったGithub Pagesの作成方法 : 'deploy-gh-pages-with-mkdocs.md'
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
 
 extra:
   analytics:
     provider: google
     property: G-1ZSQXLJQJV
+
+extra_css:
+  - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "css/custom.css"
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
+  - footnotes
+
+nav:
+  - トップ: index.md
+  - 環境構築:
+      - Docker + Laravel6 環境構築: docker-laravel.md
+      - Mkdocsを使ったGithub Pagesの作成方法: deploy-gh-pages-with-mkdocs.md
+      - Mkdocsのカスタマイズ方法: customize-mkdocs.md
+      - Laravel6にjQueryをインストールする: install-jquery-laravel6.md
+  - コーディング:
+      - 上下中央に配置する方法まとめ: css-center.md
+      - Google FormをWebサイトに埋め込む デザインありバージョン: google-form.md
+      - JavaScript:
+        - Promise: promise.md
+  - Swift: swift.md
+  - Three.js: three-js.md
+  - Makefile: makefile.md
+  - I/O:
+      - 愛されるプロダクトを生むマイクロインタラクション: micro-interaction.md
