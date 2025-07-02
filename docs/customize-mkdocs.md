@@ -18,6 +18,15 @@
 {% endblock %}
 ```
 
+次に、`mkdocs.yml`に`custom_dir: overrides`を追加します。
+
+```yml
+theme:
+  name: "material"
+  custom_dir: overrides
+
+```
+
 ## トラッキングコードの埋め込み
 
 Material for Mkdocsのテーマでは、Google Tag Manager/Google Analyticsがデフォルトでサポートされている。
