@@ -34,8 +34,12 @@
 
     
     
+  <!-- ここにheadタグのスクリプト -->
+  <meta name="google-site-verification" content="TIF2JT74rmOj6hpNh0ukSq5kdkJjr5JmrKz9EweoBOs" />
+  
       
     
+
     
       
         
@@ -925,13 +929,18 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  <span class="cm">&lt;!-- ここにbody閉じタグ直前のスクリプト --&gt;</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>{% endblock %}
 </code></pre></div>
+<p>次に、<code>mkdocs.yml</code>に<code>custom_dir: overrides</code>を追加します。</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>theme:
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  name: &quot;material&quot;
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  custom_dir: overrides
+</code></pre></div>
 <h2 id="_1">トラッキングコードの埋め込み<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>Material for Mkdocsのテーマでは、Google Tag Manager/Google Analyticsがデフォルトでサポートされている。
 <code>mkdocs.yml</code>に下記の記述を追加することでheadタグ内に計測コードを設置できる。</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>extra:
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  analytics:
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    provider: google
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    property: G-XXXXXXXXXX
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>extra:
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>  analytics:
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    provider: google
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    property: G-XXXXXXXXXX
 </code></pre></div>
 <code>G-XXXXXXXXXX</code>にGTMのコードを入力する。</p>
 <h3 id="_2">参考<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
@@ -979,8 +988,11 @@
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
+  
       <script src="../assets/javascripts/bundle.6c14ae12.min.js"></script>
       
     
+  <!-- ここにbody閉じタグ直前のスクリプト -->
+
   </body>
 </html>
