@@ -1,7 +1,8 @@
 site_name: コトづテック
 theme:
   name: "material"
-
+  custom_dir: overrides
+  
   palette:
     primary: "Deep Orange"
     accent: "Indigo"
