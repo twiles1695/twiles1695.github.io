@@ -1,15 +1,17 @@
-site_name: コトづテック
+site_name: コトづて｜Web制作
 theme:
   name: "material"
+  logo: images/logo.svg
   custom_dir: overrides
   
   palette:
-    primary: "Deep Orange"
-    accent: "Indigo"
+    primary: brown
+    accent: brown
 
   features:
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.indexes
 
 extra:
   analytics:
@@ -18,8 +20,12 @@ extra:
 
 extra_css:
   - "//fonts.googleapis.com/earlyaccess/notosansjp.css"
-  - "//fonts.googleapis.com/css?family=Open+Sans:600,800"
+  - "//fonts.googleapis.com/css?family=Open+Sans:600,800&Shippori+Mincho"
   - "css/custom.css"
+
+plugin:
+  - blog:
+      blog_dir: .
 
 markdown_extensions:
   - admonition
@@ -36,18 +42,46 @@ markdown_extensions:
 
 nav:
   - トップ: index.md
-  - 環境構築:
-      - Docker + Laravel6 環境構築: docker-laravel.md
-      - Mkdocsを使ったGithub Pagesの作成方法: deploy-gh-pages-with-mkdocs.md
-      - Mkdocsのカスタマイズ方法: customize-mkdocs.md
-      - Laravel6にjQueryをインストールする: install-jquery-laravel6.md
-  - コーディング:
-      - 上下中央に配置する方法まとめ: css-center.md
-      - Google FormをWebサイトに埋め込む デザインありバージョン: google-form.md
-      - JavaScript:
-        - Promise: promise.md
-  - Swift: swift.md
-  - Three.js: three-js.md
-  - Makefile: makefile.md
-  - I/O:
-      - 愛されるプロダクトを生むマイクロインタラクション: micro-interaction.md
+  - コトづてについて: 
+    - about/index.md
+    - 泉 拓磨について: about/me.md
+    - スキルセット: about/skill.md
+  - 好きな言葉: 
+    - words/index.md
+    - 10年後にはきっと、せめて10年でいいからもどってやり直したいと思っているのだろう。 今やり直せよ。未来を。10年後か、20年後か、50年後からもどってきたんだよ今: words/2ch.md
+    - 強くなければ生きていけない。優しくなければ生きる資格が無い。: words/hard-gentle.md
+    - 文化について: words/culture.md
+    - 至誠にて動かざる者は、未だこれあらざるなり: words/shoin.md
+    - 只だ一燈を頼め。: words/issai-sato.md
+    - 悲観は気分、楽観は意志: words/alain.md
+    - Life is contents.: words/life-is-contents.md
+    - 脱出ルートは必ずある: words/escape-route.md
+  - ご提供できること: service.md
+  # - 制作の流れ: flow.md
+  - 制作実績:
+      - works/index.md
+  #     - ママミー: works/mamamii.md
+  #     - 名寄飲料連合会: works/nayoro.md
+  #     - 羽田野グループ: works/hatano.md
+  #     - e-cosmoサイトリニューアル: works/e-cosmo.md
+  #     - 株式会社CYCOO JAPAN: works/cycoo.md
+  #     - パビット: works/pabit.md
+  - 自分の言葉:
+      - blog/index.md
+  - 技術記事:
+      - tech/index.md
+      - 環境構築:
+          - Docker + Laravel6 環境構築: tech/docker-laravel.md
+          - Mkdocsを使ったGithub Pagesの作成方法: tech/deploy-gh-pages-with-mkdocs.md
+          - Mkdocsのカスタマイズ方法: tech/customize-mkdocs.md
+          - Laravel6にjQueryをインストールする: tech/install-jquery-laravel6.md
+      - コーディング:
+          - 上下中央に配置する方法まとめ: tech/css-center.md
+          - Google FormをWebサイトに埋め込む デザインありバージョン: tech/google-form.md
+          - JavaScript:
+            - Promise: tech/promise.md
+      - Swift: tech/swift.md
+      - Three.js: tech/three-js.md
+      - Makefile: tech/makefile.md
+      - I/O:
+          - 愛されるプロダクトを生むマイクロインタラクション: tech/micro-interaction.md
