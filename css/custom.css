@@ -1,0 +1,85 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.md-header {
+  background-color: unset !important;
+  color: revert !important;
+  box-shadow: unset !important;
+}
+
+.md-tabs {
+  background-color: unset !important;
+  color: revert !important;
+}
+
+.md-typeset h1 {
+  font-family: "Shippori Mincho", serif;
+}
+
+.md-tabs__link {
+  font-family: "Shippori Mincho", serif  
+}
+
+.md-nav__link {
+  background-color: unset !important;
+  box-shadow: unset !important;
+}
+
+.lh-wide {
+  line-height: 2.4;
+}
+
+/*================================
+	トップページ
+=================================*/
+.js-letter-fv01 span,
+.js-letter-fv02 span,
+.js-letter-fv03 span,
+h2 span {
+  opacity: 0;
+  transition: opacity 1.2s cubic-bezier(0.445, 0.05, 0.55, 0.95) !important;
+}
+
+.js-letter-fv01 span.js-visible,
+.js-letter-fv02 span.js-visible,
+.js-letter-fv03 span.js-visible,
+h2 span.js-visible {
+  opacity: 1;
+}
+
+#canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.fv {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 10%;
+}
+.fv__txt {
+  writing-mode: vertical-rl;
+  font-family: "Shippori Mincho", "\6E38\660E\671D   Medium", "Helvetica Neue", Arial, serif;
+  font-size: 1rem;
+  color: #7E7E7E;
+  line-height: 2;
+  letter-spacing: 0.2em;
+}
+
+@media (min-width: 48em) {
+  .fv {
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 15%;
+  }
+  .fv__txt {
+    writing-mode: horizontal-tb;
+    text-align: center;
+    font-size: 24px;
+  }
+}
